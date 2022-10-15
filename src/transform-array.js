@@ -37,11 +37,10 @@ function transform(arr) {
     } 
     return newArr;
   } else {
-    return Error("'arr' parameter must be an instance of the Array!");
+    throw new Error("'arr' parameter must be an instance of the Array!");
   }
 }
 
-console.log(transform([1, 2, 3, '--discard-next', 1337, '--discard-prev', 4, 5]));
 
 module.exports = {
   transform
